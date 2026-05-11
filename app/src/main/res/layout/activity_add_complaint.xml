@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Top Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/primary"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="← Submit Complaint"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:id="@+id/btnBack"/>
+        </LinearLayout>
+
+        <!-- Form Card -->
+        <androidx.cardview.widget.CardView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Student Name -->
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Student Name *" android:textStyle="bold" android:textColor="@color/text_dark"/>
+                <EditText android:id="@+id/etName" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="Enter your name"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Roll Number -->
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Roll Number *" android:textStyle="bold" android:textColor="@color/text_dark"/>
+                <EditText android:id="@+id/etRoll" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="e.g. BSCS-101"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Complaint Title -->
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Complaint Title *" android:textStyle="bold" android:textColor="@color/text_dark"/>
+                <EditText android:id="@+id/etTitle" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="e.g. Wi-Fi Issue"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Category Spinner -->
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Category *" android:textStyle="bold" android:textColor="@color/text_dark"/>
+                <Spinner android:id="@+id/spinnerCategory" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_marginBottom="12dp"/>
+
+                <!-- Priority Spinner -->
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Priority *" android:textStyle="bold" android:textColor="@color/text_dark"/>
+                <Spinner android:id="@+id/spinnerPriority" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_marginBottom="12dp"/>
+
+                <!-- Description -->
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Description *" android:textStyle="bold" android:textColor="@color/text_dark"/>
+                <EditText android:id="@+id/etDescription" android:layout_width="match_parent"
+                    android:layout_height="120dp" android:hint="Describe your complaint..."
+                    android:gravity="top" android:layout_marginBottom="16dp"/>
+
+                <!-- Submit Button -->
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Submit Complaint"
+                    android:backgroundTint="@color/accent"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

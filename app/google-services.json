@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1095182590125",
+    "project_id": "usermanagement-d7f77",
+    "storage_bucket": "usermanagement-d7f77.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095182590125:android:4129b3d81b67548acba624",
+        "android_client_info": {
+          "package_name": "com.example.quizapplication2023cs189"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG-puqMsJCbKVcpA0W8cTg7r4HY1UDJ2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
